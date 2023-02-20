@@ -139,6 +139,33 @@ int Add(Table& a)
 	return 0;
 }
 
+int Cancel(Table& a)
+{
+	Habitation* ptr = nullptr;
+	std::cout << "Enter adress: ";
+	std::string adress;
+	ptr = a.find(adress);
+	if (ptr != nullptr)
+	{
+		if (ptr->getSettled() == false)
+		{
+			std::cout << "Cant cancel";
+			return -1;
+		}
+		else
+		{
+			ptr->changeSettled();
+			return 1;
+		}
+	}
+	return -1;
+}
+
+int ShowAll(Table& t)
+{
+	std::cout << t;
+}
+
 
 int main()
 {
