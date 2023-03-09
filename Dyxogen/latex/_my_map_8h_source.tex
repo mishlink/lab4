@@ -1,0 +1,48 @@
+\hypertarget{_my_map_8h_source}{}\doxysection{My\+Map.\+h}
+\label{_my_map_8h_source}\index{D:/Projects/Sem3/lab4/lab4/MyMap.h@{D:/Projects/Sem3/lab4/lab4/MyMap.h}}
+\mbox{\hyperlink{_my_map_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_MYMAP\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_MYMAP\_H\_}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_habitation_8h}{Habitation.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }\mbox{\hyperlink{namespace_habitations}{Habitations}};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_prog4}{Prog4}}\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ IND>}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_prog4_1_1_pair}{Pair}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}}\ \mbox{\hyperlink{struct_prog4_1_1_pair_a908749c79345705832ea9ba9e88e65ad}{first}};}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ IND\ \mbox{\hyperlink{struct_prog4_1_1_pair_acaba08d2f3a78b9eaff650cac8fa802a}{second}};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_prog4_1_1_pair_afd28cc8c747544409e13ec343f734d7f}{Pair}}()\ :\mbox{\hyperlink{struct_prog4_1_1_pair_a908749c79345705832ea9ba9e88e65ad}{first}}(IND()),\ \mbox{\hyperlink{struct_prog4_1_1_pair_acaba08d2f3a78b9eaff650cac8fa802a}{second}}(0)\ \{\ \}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_prog4_1_1_pair_ad19348dd488fc0dd590fe00505152fe3}{Pair}}(\mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}}\ indx,\ IND\ val)\ :\mbox{\hyperlink{struct_prog4_1_1_pair_a908749c79345705832ea9ba9e88e65ad}{first}}(indx),\ \mbox{\hyperlink{struct_prog4_1_1_pair_acaba08d2f3a78b9eaff650cac8fa802a}{second}}(val)\ \{\}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ IND>}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_prog4_1_1_assoc}{Assoc}}\ \{}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ QUOTA\ =\ 10;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cnt,\ cur;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_prog4_1_1_pair}{Pair<IND>}}*\ arr;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getPos(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}}\&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_prog4_1_1_assoc_a54608a5480e9d6fa60c198cbe1a5910b}{Assoc}}()\ :cnt(QUOTA),\ cur(0),\ arr(new\ \mbox{\hyperlink{struct_prog4_1_1_pair}{Pair}}<IND>[QUOTA])\ \{\ \}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_prog4_1_1_assoc_a54608a5480e9d6fa60c198cbe1a5910b}{Assoc}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_prog4_1_1_assoc}{Assoc<IND>}}\&);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_prog4_1_1_assoc_a101f7bf75ec75eddacca4cf4b0bad09b}{\string~Assoc}}()\ \{\ \textcolor{keyword}{delete}[]\ arr;\ \}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_prog4_1_1_assoc}{Assoc<IND>}}\&\ \mbox{\hyperlink{class_prog4_1_1_assoc_a4a8c142b60b082a649f4df08fb6d03e9}{operator\ =\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_prog4_1_1_assoc}{Assoc<IND>}}\&);}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_prog4_1_1_assoc_aebbf77b32f78f37052c0492504315afd}{insert}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}}\&,\ \textcolor{keyword}{const}\ IND*);}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ IND*\ \mbox{\hyperlink{class_prog4_1_1_assoc_a91feda4e225266001d738ee11b73e95f}{find}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}}\&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{class_prog4_1_1_assoc_aa617359904a4bf706592a6a9fd554021}{operator\ <<\ }}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_prog4_1_1_table}{Table}}\&);}
+\DoxyCodeLine{00039\ \ \ \ \ \};}
+\DoxyCodeLine{00040\ \}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00042\ }
+
+\end{DoxyCode}

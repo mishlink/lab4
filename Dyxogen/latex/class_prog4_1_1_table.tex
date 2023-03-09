@@ -1,0 +1,129 @@
+\hypertarget{class_prog4_1_1_table}{}\doxysection{Prog4\+::Table Class Reference}
+\label{class_prog4_1_1_table}\index{Prog4::Table@{Prog4::Table}}
+
+
+{\ttfamily \#include $<$Table.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_prog4_1_1_table_a4285d4a36ee9744d1c462ef6bbda050e}{Table}} ()
+\item 
+\mbox{\hyperlink{class_prog4_1_1_table_a6a43245905a9b94e1c7ed9708e61ffc7}{Table}} (const \mbox{\hyperlink{class_prog4_1_1_table}{Table}} \&)
+\item 
+\mbox{\hyperlink{class_prog4_1_1_table_a88d5851364fd66749fc1403205b76dda}{$\sim$\+Table}} ()
+\item 
+\mbox{\hyperlink{class_prog4_1_1_table}{Table}} \& \mbox{\hyperlink{class_prog4_1_1_table_a28a2fa9c9f95a0ba9e9561b6fe3aea8c}{operator=}} (const \mbox{\hyperlink{class_prog4_1_1_table}{Table}} \&)
+\begin{DoxyCompactList}\small\item\em Overloaded assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}} $\ast$ \mbox{\hyperlink{class_prog4_1_1_table_a733ae9718301a92073ee217cc74f242d}{find}} (const \mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}} \&) const
+\begin{DoxyCompactList}\small\item\em The method that use the Adress to find the Habitation\textquotesingle{}s info. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_prog4_1_1_table_a97adea24c5073e24849194cddeb70223}{insert}} (const \mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}} \&, const \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}} $\ast$)
+\begin{DoxyCompactList}\small\item\em The method that add Habitation to \mbox{\hyperlink{class_prog4_1_1_table}{Table}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_prog4_1_1_table_aa617359904a4bf706592a6a9fd554021}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_prog4_1_1_table}{Table}} \&)
+\begin{DoxyCompactList}\small\item\em Output \mbox{\hyperlink{class_prog4_1_1_table}{Table}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_prog4_1_1_table_a4285d4a36ee9744d1c462ef6bbda050e}\label{class_prog4_1_1_table_a4285d4a36ee9744d1c462ef6bbda050e}} 
+\index{Prog4::Table@{Prog4::Table}!Table@{Table}}
+\index{Table@{Table}!Prog4::Table@{Prog4::Table}}
+\doxysubsubsection{\texorpdfstring{Table()}{Table()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Prog4\+::\+Table\+::\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_prog4_1_1_table_a6a43245905a9b94e1c7ed9708e61ffc7}\label{class_prog4_1_1_table_a6a43245905a9b94e1c7ed9708e61ffc7}} 
+\index{Prog4::Table@{Prog4::Table}!Table@{Table}}
+\index{Table@{Table}!Prog4::Table@{Prog4::Table}}
+\doxysubsubsection{\texorpdfstring{Table()}{Table()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Prog4\+::\+Table\+::\+Table (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_prog4_1_1_table}{Table}} \&}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_prog4_1_1_table_a88d5851364fd66749fc1403205b76dda}\label{class_prog4_1_1_table_a88d5851364fd66749fc1403205b76dda}} 
+\index{Prog4::Table@{Prog4::Table}!````~Table@{$\sim$Table}}
+\index{````~Table@{$\sim$Table}!Prog4::Table@{Prog4::Table}}
+\doxysubsubsection{\texorpdfstring{$\sim$Table()}{~Table()}}
+{\footnotesize\ttfamily Prog4\+::\+Table\+::$\sim$\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_prog4_1_1_table_a733ae9718301a92073ee217cc74f242d}\label{class_prog4_1_1_table_a733ae9718301a92073ee217cc74f242d}} 
+\index{Prog4::Table@{Prog4::Table}!find@{find}}
+\index{find@{find}!Prog4::Table@{Prog4::Table}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}} $\ast$ Prog4\+::\+Table\+::find (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}} \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+The method that use the Adress to find the Habitation\textquotesingle{}s info. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Adress} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Habitation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_prog4_1_1_table_a97adea24c5073e24849194cddeb70223}\label{class_prog4_1_1_table_a97adea24c5073e24849194cddeb70223}} 
+\index{Prog4::Table@{Prog4::Table}!insert@{insert}}
+\index{insert@{insert}!Prog4::Table@{Prog4::Table}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily bool Prog4\+::\+Table\+::insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}} \&}]{s,  }\item[{const \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+The method that add Habitation to \mbox{\hyperlink{class_prog4_1_1_table}{Table}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Adress} & This is the key for searching the table \\
+\hline
+{\em Habitation} & The element that is inserted into the table \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_prog4_1_1_table_a28a2fa9c9f95a0ba9e9561b6fe3aea8c}\label{class_prog4_1_1_table_a28a2fa9c9f95a0ba9e9561b6fe3aea8c}} 
+\index{Prog4::Table@{Prog4::Table}!operator=@{operator=}}
+\index{operator=@{operator=}!Prog4::Table@{Prog4::Table}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_prog4_1_1_table}{Table}} \& Prog4\+::\+Table\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_prog4_1_1_table}{Table}} \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Overloaded assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t1} & first \mbox{\hyperlink{class_prog4_1_1_table}{Table}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+t2 second \mbox{\hyperlink{class_prog4_1_1_table}{Table}} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_prog4_1_1_table_aa617359904a4bf706592a6a9fd554021}\label{class_prog4_1_1_table_aa617359904a4bf706592a6a9fd554021}} 
+\index{Prog4::Table@{Prog4::Table}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Prog4::Table@{Prog4::Table}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_prog4_1_1_table}{Table}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Output \mbox{\hyperlink{class_prog4_1_1_table}{Table}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Ostream \\
+\hline
+{\em t} & \mbox{\hyperlink{class_prog4_1_1_table}{Table}} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Projects/\+Sem3/lab4/lab4/\mbox{\hyperlink{_table_8h}{Table.\+h}}\item 
+D\+:/\+Projects/\+Sem3/lab4/lab4/\mbox{\hyperlink{_table_8cpp}{Table.\+cpp}}\end{DoxyCompactItemize}

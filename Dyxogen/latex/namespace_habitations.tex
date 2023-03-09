@@ -1,0 +1,101 @@
+\hypertarget{namespace_habitations}{}\doxysection{Habitations Namespace Reference}
+\label{namespace_habitations}\index{Habitations@{Habitations}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}}
+\item 
+class \mbox{\hyperlink{class_habitations_1_1_apartment}{Apartment}}
+\item 
+class \mbox{\hyperlink{class_habitations_1_1_building}{Building}}
+\item 
+class \mbox{\hyperlink{class_habitations_1_1_cottage}{Cottage}}
+\item 
+class \mbox{\hyperlink{class_habitations_1_1_flat}{Flat}}
+\item 
+class \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}}
+\item 
+class \mbox{\hyperlink{class_habitations_1_1_room}{Room}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{namespace_habitations_aae2268cc6a10b7b2cb9d38688fa2e0c1}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_habitations_1_1_room}{Room}} \&r)
+\begin{DoxyCompactList}\small\item\em Output \mbox{\hyperlink{class_habitations_1_1_room}{Room}}\textquotesingle{}s name, area, comments. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_habitations_1_1_room}{Room}} \mbox{\hyperlink{namespace_habitations_af641cfcf97734031fbaa4f29b9f32582}{In\+Room}} (std\+::istream \&is, std\+::string s)
+\begin{DoxyCompactList}\small\item\em Input \mbox{\hyperlink{class_habitations_1_1_room}{Room}}\textquotesingle{}s parameters\+: area, comments. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{namespace_habitations_ae5c64aafc02cd068a4c7cf76d1cf70eb}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}} \&h)
+\begin{DoxyCompactList}\small\item\em Output \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}}\textquotesingle{}s parameters. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{namespace_habitations_a9951af29941e03067a8de2bc68595208}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_habitations_1_1_building}{Building}} \&b)
+\begin{DoxyCompactList}\small\item\em Output \mbox{\hyperlink{class_habitations_1_1_building}{Building}}\textquotesingle{}s parameters\+: building number, area, info of each \mbox{\hyperlink{class_habitations_1_1_room}{Room}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_habitations_af641cfcf97734031fbaa4f29b9f32582}\label{namespace_habitations_af641cfcf97734031fbaa4f29b9f32582}} 
+\index{Habitations@{Habitations}!InRoom@{InRoom}}
+\index{InRoom@{InRoom}!Habitations@{Habitations}}
+\doxysubsubsection{\texorpdfstring{InRoom()}{InRoom()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_habitations_1_1_room}{Room}} Habitations\+::\+In\+Room (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{std\+::string}]{s }\end{DoxyParamCaption})}
+
+
+
+Input \mbox{\hyperlink{class_habitations_1_1_room}{Room}}\textquotesingle{}s parameters\+: area, comments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Istream \\
+\hline
+{\em s} & Name of room \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_habitations_a9951af29941e03067a8de2bc68595208}\label{namespace_habitations_a9951af29941e03067a8de2bc68595208}} 
+\index{Habitations@{Habitations}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Habitations@{Habitations}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily std\+::ostream \& Habitations\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_habitations_1_1_building}{Building}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Output \mbox{\hyperlink{class_habitations_1_1_building}{Building}}\textquotesingle{}s parameters\+: building number, area, info of each \mbox{\hyperlink{class_habitations_1_1_room}{Room}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Ostream \\
+\hline
+{\em b} & \mbox{\hyperlink{class_habitations_1_1_building}{Building}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_habitations_ae5c64aafc02cd068a4c7cf76d1cf70eb}\label{namespace_habitations_ae5c64aafc02cd068a4c7cf76d1cf70eb}} 
+\index{Habitations@{Habitations}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Habitations@{Habitations}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily std\+::ostream \& Habitations\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}} \&}]{h }\end{DoxyParamCaption})}
+
+
+
+Output \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}}\textquotesingle{}s parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Ostream \\
+\hline
+{\em h} & \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_habitations_aae2268cc6a10b7b2cb9d38688fa2e0c1}\label{namespace_habitations_aae2268cc6a10b7b2cb9d38688fa2e0c1}} 
+\index{Habitations@{Habitations}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Habitations@{Habitations}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily std\+::ostream \& Habitations\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_habitations_1_1_room}{Room}} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+Output \mbox{\hyperlink{class_habitations_1_1_room}{Room}}\textquotesingle{}s name, area, comments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Ostream \\
+\hline
+{\em r} & \mbox{\hyperlink{class_habitations_1_1_room}{Room}} \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,226 @@
+\hypertarget{class_habitations_1_1_habitation}{}\doxysection{Habitations\+::Habitation Class Reference}
+\label{class_habitations_1_1_habitation}\index{Habitations::Habitation@{Habitations::Habitation}}
+
+
+{\ttfamily \#include $<$Habitation.\+h$>$}
+
+Inheritance diagram for Habitations\+::Habitation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_habitations_1_1_habitation}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_habitations_1_1_habitation_a4590fc238b9f069b10c0c12d32deac1e}{Habitation}} ()
+\item 
+\mbox{\hyperlink{class_habitations_1_1_habitation_a46c9c0288f26c14c9354429eea7413a8}{Habitation}} (\mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}} ad, double c, bool s)
+\item 
+virtual \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}} $\ast$ \mbox{\hyperlink{class_habitations_1_1_habitation_a4afc6509581bf14d11d8ffdd41138c78}{clone}} () const =0
+\item 
+virtual std\+::istream \& \mbox{\hyperlink{class_habitations_1_1_habitation_aa5238c24fbfdfc43b57c4f2dd096bb4d}{input}} (std\+::istream \&, \mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}} ad)=0
+\item 
+virtual int \mbox{\hyperlink{class_habitations_1_1_habitation_aa74c22190a977c7816919fbe1d786e91}{get\+Type}} () const =0
+\item 
+bool \mbox{\hyperlink{class_habitations_1_1_habitation_a07a5c8abc98905abdde2f4cbc8010b53}{get\+Settled}} () const
+\begin{DoxyCompactList}\small\item\em The method that return true if the room is occupied, otherwise false. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_habitations_1_1_habitation_afb2ce01779c4e8748f0ec0d78f56279e}{change\+Settled}} ()
+\begin{DoxyCompactList}\small\item\em The method that change the state of occupancy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}} \mbox{\hyperlink{class_habitations_1_1_habitation_ac7120c8e72394bba36a549c57fecc924}{get\+Adress}} () const
+\begin{DoxyCompactList}\small\item\em The method that return \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}}\textquotesingle{}s adress. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_habitations_1_1_habitation_a82b752515496f2fd58460beb85eb7fee}{get\+Cost}} () const
+\begin{DoxyCompactList}\small\item\em The method that return \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}}\textquotesingle{}s cost of 1 sq m. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_habitations_1_1_habitation_a2e393133ed45b78507270763d6267004}{get\+Area}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_habitations_1_1_habitation_a2daeb187763e690b6c81d29b7eb85fe4}{$\sim$\+Habitation}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::ostream \& \mbox{\hyperlink{class_habitations_1_1_habitation_ae172f3222ee644823b151771e4307ae0}{show}} (std\+::ostream \&) const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}} \mbox{\hyperlink{class_habitations_1_1_habitation_aadb09879836396a7d52ab4252c1c354a}{a}}
+\item 
+double \mbox{\hyperlink{class_habitations_1_1_habitation_a8ca2c0fdbd8e96e0c5d69eda0f247ba5}{cost}}
+\item 
+bool \mbox{\hyperlink{class_habitations_1_1_habitation_a6e7cac541f99120fbc91327c568f3cb5}{set}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_habitations_1_1_habitation_a823a4945ef666631a22102d14e42df7e}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}} \&)
+\begin{DoxyCompactList}\small\item\em Output \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}}\textquotesingle{}s parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_habitations_1_1_habitation_a4590fc238b9f069b10c0c12d32deac1e}\label{class_habitations_1_1_habitation_a4590fc238b9f069b10c0c12d32deac1e}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!Habitation@{Habitation}}
+\index{Habitation@{Habitation}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{Habitation()}{Habitation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Habitations\+::\+Habitation\+::\+Habitation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_habitations_1_1_habitation_a46c9c0288f26c14c9354429eea7413a8}\label{class_habitations_1_1_habitation_a46c9c0288f26c14c9354429eea7413a8}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!Habitation@{Habitation}}
+\index{Habitation@{Habitation}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{Habitation()}{Habitation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Habitations\+::\+Habitation\+::\+Habitation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}}}]{ad,  }\item[{double}]{c,  }\item[{bool}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_habitations_1_1_habitation_a2daeb187763e690b6c81d29b7eb85fe4}\label{class_habitations_1_1_habitation_a2daeb187763e690b6c81d29b7eb85fe4}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!````~Habitation@{$\sim$Habitation}}
+\index{````~Habitation@{$\sim$Habitation}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{$\sim$Habitation()}{~Habitation()}}
+{\footnotesize\ttfamily virtual Habitations\+::\+Habitation\+::$\sim$\+Habitation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_habitations_1_1_habitation_afb2ce01779c4e8748f0ec0d78f56279e}\label{class_habitations_1_1_habitation_afb2ce01779c4e8748f0ec0d78f56279e}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!changeSettled@{changeSettled}}
+\index{changeSettled@{changeSettled}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{changeSettled()}{changeSettled()}}
+{\footnotesize\ttfamily void Habitations\+::\+Habitation\+::change\+Settled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The method that change the state of occupancy. 
+
+\mbox{\Hypertarget{class_habitations_1_1_habitation_a4afc6509581bf14d11d8ffdd41138c78}\label{class_habitations_1_1_habitation_a4afc6509581bf14d11d8ffdd41138c78}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!clone@{clone}}
+\index{clone@{clone}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}} $\ast$ Habitations\+::\+Habitation\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_habitations_1_1_flat_a4fdb1ee5151325e08f863fc8a1e1e69e}{Habitations\+::\+Flat}}, \mbox{\hyperlink{class_habitations_1_1_apartment_af571a804f0444c2897c56ef74c537de3}{Habitations\+::\+Apartment}}, and \mbox{\hyperlink{class_habitations_1_1_cottage_a3549a19328d1e9a1ef8603396b6ec965}{Habitations\+::\+Cottage}}.
+
+\mbox{\Hypertarget{class_habitations_1_1_habitation_ac7120c8e72394bba36a549c57fecc924}\label{class_habitations_1_1_habitation_ac7120c8e72394bba36a549c57fecc924}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!getAdress@{getAdress}}
+\index{getAdress@{getAdress}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{getAdress()}{getAdress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}} Habitations\+::\+Habitation\+::get\+Adress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+The method that return \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}}\textquotesingle{}s adress. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}}\textquotesingle{}s adress 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_habitations_1_1_habitation_a2e393133ed45b78507270763d6267004}\label{class_habitations_1_1_habitation_a2e393133ed45b78507270763d6267004}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!getArea@{getArea}}
+\index{getArea@{getArea}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{getArea()}{getArea()}}
+{\footnotesize\ttfamily virtual double Habitations\+::\+Habitation\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_habitations_1_1_flat_a0f79f7fe77618a169b3786e12a4326e2}{Habitations\+::\+Flat}}, \mbox{\hyperlink{class_habitations_1_1_apartment_ae890ad1b77973cfc33b35ab1c0039574}{Habitations\+::\+Apartment}}, and \mbox{\hyperlink{class_habitations_1_1_cottage_a2c47f37209e5a61b4688bcc0487fe23d}{Habitations\+::\+Cottage}}.
+
+\mbox{\Hypertarget{class_habitations_1_1_habitation_a82b752515496f2fd58460beb85eb7fee}\label{class_habitations_1_1_habitation_a82b752515496f2fd58460beb85eb7fee}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!getCost@{getCost}}
+\index{getCost@{getCost}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{getCost()}{getCost()}}
+{\footnotesize\ttfamily double Habitations\+::\+Habitation\+::get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+The method that return \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}}\textquotesingle{}s cost of 1 sq m. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}}\textquotesingle{}s cost of 1 sq m 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_habitations_1_1_habitation_a07a5c8abc98905abdde2f4cbc8010b53}\label{class_habitations_1_1_habitation_a07a5c8abc98905abdde2f4cbc8010b53}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!getSettled@{getSettled}}
+\index{getSettled@{getSettled}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{getSettled()}{getSettled()}}
+{\footnotesize\ttfamily bool Habitations\+::\+Habitation\+::get\+Settled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+The method that return true if the room is occupied, otherwise false. 
+
+\begin{DoxyReturn}{Returns}
+the state of occupancy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_habitations_1_1_habitation_aa74c22190a977c7816919fbe1d786e91}\label{class_habitations_1_1_habitation_aa74c22190a977c7816919fbe1d786e91}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!getType@{getType}}
+\index{getType@{getType}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual int Habitations\+::\+Habitation\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_habitations_1_1_flat_ad91efffc04323cdc07860a4767c2d06e}{Habitations\+::\+Flat}}, \mbox{\hyperlink{class_habitations_1_1_apartment_a37f013e40f6553f57b7cdf1dd0f890ba}{Habitations\+::\+Apartment}}, and \mbox{\hyperlink{class_habitations_1_1_cottage_a0ad306e74aac44d425028f4cef6f81e2}{Habitations\+::\+Cottage}}.
+
+\mbox{\Hypertarget{class_habitations_1_1_habitation_aa5238c24fbfdfc43b57c4f2dd096bb4d}\label{class_habitations_1_1_habitation_aa5238c24fbfdfc43b57c4f2dd096bb4d}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!input@{input}}
+\index{input@{input}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily virtual std\+::istream \& Habitations\+::\+Habitation\+::input (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{,  }\item[{\mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}}}]{ad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_habitations_1_1_flat_a3aabd6e4fe97544eb0f64f02632f6f2e}{Habitations\+::\+Flat}}, \mbox{\hyperlink{class_habitations_1_1_apartment_a12d018fcb6d39ff55ee51d89ffc3c4ef}{Habitations\+::\+Apartment}}, and \mbox{\hyperlink{class_habitations_1_1_cottage_ad7f82533428a9434ae52b166b4fce02c}{Habitations\+::\+Cottage}}.
+
+\mbox{\Hypertarget{class_habitations_1_1_habitation_ae172f3222ee644823b151771e4307ae0}\label{class_habitations_1_1_habitation_ae172f3222ee644823b151771e4307ae0}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!show@{show}}
+\index{show@{show}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily virtual std\+::ostream \& Habitations\+::\+Habitation\+::show (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_habitations_1_1_flat_ae3b179fa83a2e52dcc0ab747fc5700e2}{Habitations\+::\+Flat}}, \mbox{\hyperlink{class_habitations_1_1_apartment_a248328e7a85f2b27eefe9f28a6d0a23a}{Habitations\+::\+Apartment}}, and \mbox{\hyperlink{class_habitations_1_1_cottage_ae3097fc94df8631db5e54b9a8caa685e}{Habitations\+::\+Cottage}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_habitations_1_1_habitation_a823a4945ef666631a22102d14e42df7e}\label{class_habitations_1_1_habitation_a823a4945ef666631a22102d14e42df7e}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}} \&}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Output \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}}\textquotesingle{}s parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Ostream \\
+\hline
+{\em h} & \mbox{\hyperlink{class_habitations_1_1_habitation}{Habitation}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_habitations_1_1_habitation_aadb09879836396a7d52ab4252c1c354a}\label{class_habitations_1_1_habitation_aadb09879836396a7d52ab4252c1c354a}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!a@{a}}
+\index{a@{a}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_habitations_1_1_adress}{Adress}} Habitations\+::\+Habitation\+::a\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_habitations_1_1_habitation_a8ca2c0fdbd8e96e0c5d69eda0f247ba5}\label{class_habitations_1_1_habitation_a8ca2c0fdbd8e96e0c5d69eda0f247ba5}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!cost@{cost}}
+\index{cost@{cost}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{cost}{cost}}
+{\footnotesize\ttfamily double Habitations\+::\+Habitation\+::cost\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_habitations_1_1_habitation_a6e7cac541f99120fbc91327c568f3cb5}\label{class_habitations_1_1_habitation_a6e7cac541f99120fbc91327c568f3cb5}} 
+\index{Habitations::Habitation@{Habitations::Habitation}!set@{set}}
+\index{set@{set}!Habitations::Habitation@{Habitations::Habitation}}
+\doxysubsubsection{\texorpdfstring{set}{set}}
+{\footnotesize\ttfamily bool Habitations\+::\+Habitation\+::set\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Projects/\+Sem3/lab4/lab4/\mbox{\hyperlink{_habitation_8h}{Habitation.\+h}}\item 
+D\+:/\+Projects/\+Sem3/lab4/lab4/\mbox{\hyperlink{_habitation_8cpp}{Habitation.\+cpp}}\end{DoxyCompactItemize}

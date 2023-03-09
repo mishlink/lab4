@@ -8,6 +8,10 @@ namespace Habitations {
 		int house;
 		int flat;
 		Adress(std::string s = "Default", int h = 1, int f = 0) : street(s), house(h), flat(f) {}
+		bool operator<(const Adress& rhs) const noexcept
+		{
+			return this->street < rhs.street;
+		}
 	};
 
 	class Room {
@@ -23,18 +27,17 @@ namespace Habitations {
 	};
 
 	class Habitation {
-	private:
+	protected:
 		Adress a;
 		double cost;
 		bool set;
-	protected:
 		virtual std::ostream& show(std::ostream&) const = 0;
-		//virtual std::istream& input(std::istream&) = 0;
 	public:
 		Habitation();
 		Habitation(Adress ad, double c, bool s) : a(ad), cost(c), set(s) {}
 		virtual Habitation* clone() const = 0;
 		friend std::ostream& operator << (std::ostream&, const Habitation&);
+		virtual std::istream& input(std::istream&, Adress ad) = 0;
 		virtual int getType() const = 0;
 		bool getSettled() const;
 		void changeSettled();
@@ -52,6 +55,7 @@ namespace Habitations {
 	public:
 		Flat();
 		Flat(Adress ad, double c, bool s, Room ro[4]);
+		std::istream& input(std::istream&, Adress ad);
 		Habitation* clone() const {
 			return new Flat(*this);
 		}
@@ -73,6 +77,7 @@ namespace Habitations {
 	public:
 		Apartment();
 		Apartment(Adress ad, double c, bool s, int cnt, Room *ro);
+		std::istream& input(std::istream&, Adress ad);
 		Habitation* clone() const {
 			return new Apartment(*this);
 		}
@@ -94,6 +99,7 @@ namespace Habitations {
 		Building(int nu = 1);
 		Building(int nu, int cn, Room *ro);
 		friend std::ostream& operator << (std::ostream& os, const Building&);
+		Building input(std::istream&, int number);
 		double getArea() const;
 	};
 
@@ -108,6 +114,7 @@ namespace Habitations {
 	public:
 		Cottage();
 		Cottage(Adress ad, double c, bool s, int cnt, Building* b);
+		std::istream& input(std::istream&, Adress ad);
 		Habitation* clone() const {
 			return new Cottage(*this);
 		}
