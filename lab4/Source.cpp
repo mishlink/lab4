@@ -136,10 +136,6 @@ int Add(Table& a)
 		Flat fl;
 		Apartment ap;
 		Cottage cot;
-		std::cout << "Enter a habitation name: --> ";
-		std::cin >> name;
-		if (!std::cin.good())
-			throw std::exception("Error when a habitation name was entered");
 		switch (ans) {
 		case 1:
 		{

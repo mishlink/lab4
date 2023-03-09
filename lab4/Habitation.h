@@ -11,6 +11,7 @@ namespace Habitations {
 		bool operator<(const Adress& rhs) const noexcept
 		{
 			return this->street < rhs.street;
+
 		}
 	};
 

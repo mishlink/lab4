@@ -31,16 +31,16 @@ namespace Habitations {
 
 	Room InRoom(std::istream& is, std::string s)
 	{
-		std::cout << s;
+		std::cout << s << std:: endl;
 		std::cout << "Enter Area: ";
-		double area;
-		is >> area;
-		if (std::cin.good())
+		double ar;
+		is >> ar;
+		if (!std::cin.good())
 			throw std::exception("Error when area room were entered");
 		std::cout << "Enter comments: ";
 		std::string com;
 		is >> com;
-		Room r(s, area, com);
+		Room r(s, ar, com);
 		return r;
 	}
 
