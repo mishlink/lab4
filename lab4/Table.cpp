@@ -13,7 +13,7 @@ namespace Prog4 {
 		std::map <const Adress, Habitation*>::const_iterator p = t.arr.begin();
 		for (; p != t.arr.end(); p++)
 		{
-			std::cout << p->second;
+			std::cout << (*p->second);
 		}
 		return os;
 	}

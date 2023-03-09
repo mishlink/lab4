@@ -102,14 +102,14 @@ int Add(Table& a)
 	int house = -1, flat = -1;
 	std::cout << "Enter street: " << std::endl;
 	std::cin >> street;
-	while (house > 0)
+	while (house <= 0)
 	{
 		std::cout << "Enter house (number > 0): " << std::endl;
 		std::cin >> house;
 		if (!std::cin.good())
 			throw std::exception("Error when number house were entered");
 	}
-	while (flat >= 0)
+	while (flat < 0)
 	{
 		std::cout << "Enter flat (if no flat, then number = 0; else number > 0): " << std::endl;
 		std::cin >> flat;
@@ -126,40 +126,41 @@ int Add(Table& a)
 		else
 		{
 			ptr->changeSettled();
+			return 0;
 		}
 	}
 	int ans;
 	std::string name;
 
-	while (ans = Answer(Sh, NumSh)) {
-		Habitation* h = nullptr;
-		Flat fl;
-		Apartment ap;
-		Cottage cot;
-		switch (ans) {
-		case 1:
-		{
-			h = &fl;
-			break;
-		}
-		case 2:
-		{
-			h = &ap;
-			break;
-		}
-		case 3:
-			h = &cot;
-			break;
-		};
-		(*h).input(std::cin, ad);
-		if (!std::cin.good())
-			throw std::exception("Error when shape values were entered");
-		std::cin.ignore(80, '\n');
-		if (a.insert(ad, h))
-			std::cout << "Ok" << std::endl;
-		else
-			std::cout << "Duplicate name" << std::endl;
+	ans = Answer(Sh, NumSh);
+	Habitation* h = nullptr;
+	Flat fl;
+	Apartment ap;
+	Cottage cot;
+	switch (ans) {
+	case 1:
+	{
+		h = &fl;
+		break;
 	}
+	case 2:
+	{
+		h = &ap;
+		break;
+	}
+	case 3:
+		h = &cot;
+		break;
+	};
+	(*h).input(std::cin, ad);
+	if (!std::cin.good())
+		throw std::exception("Error when shape values were entered");
+	std::cin.ignore(80, '\n');
+	if (a.insert(ad, h))
+		std::cout << "Ok" << std::endl;
+	else
+		std::cout << "Duplicate name" << std::endl;
+	
 	return 0;
 }
 
@@ -167,8 +168,24 @@ int Cancel(Table& a)
 {
 	Habitation* ptr = nullptr;
 	std::cout << "Enter adress: ";
-	std::string adress;
-	ptr = a.find(adress);
+	std::string street;
+	int house = -1, flat = -1;
+	std::cout << "Enter street: " << std::endl;
+	std::cin >> street;
+	while (house <= 0)
+	{
+		std::cout << "Enter house (number > 0): " << std::endl;
+		std::cin >> house;
+		if (!std::cin.good())
+			throw std::exception("Error when number house were entered");
+	}
+	while (flat < 0)
+	{
+		std::cout << "Enter flat (if no flat, then number = 0; else number > 0): " << std::endl;
+		std::cin >> flat;
+	}
+	Adress ad(street, house, flat);
+	ptr = a.find(ad);
 	if (ptr != nullptr)
 	{
 		if (ptr->getSettled() == false)
